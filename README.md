@@ -2,7 +2,14 @@
 Free is a Golang-based port of the Linux [free](https://man7.org/linux/man-pages/man1/free.1.html) command. It displays the amount of free and used memory in the system.
 
 ## Installation
-Clone the repository and from within the repository directory, type `make build`. This will create a directory with the given value of `GOOS` and install the binary there. It will also create a tarball which will eventually be used for Homebrew formulae.
+* Clone this repository
+* `cd` to the repository root
+* Type `make build` and the binary will live under `bin` in the repository root
+* You will need to manually copy `share/man/man1/free.1` to your `$MANPATH`
+* You can also use homebrew
+    * `brew tap bananazon/homebrew`
+    * `brew update`
+    * `brew install bananazon/homebrew/free`
 
 ## Free Runtime Options
 ```
